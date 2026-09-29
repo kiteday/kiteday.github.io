@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Artfusion 제1저자 논문과 멀티모달 연속 장면 생성 연구.">
+  <meta name="theme-color" content="#f5f3ee">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="논문·연구 | 양혜민 포트폴리오">
+  <meta property="og:description" content="Artfusion 제1저자 논문과 멀티모달 연속 장면 생성 연구.">
+  <meta property="og:url" content="https://kiteday.github.io/portfolio/research/">
+  <title>논문·연구 | 양혜민 포트폴리오</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+  <a class="skip" href="#main">본문으로 바로가기</a>
+  <header class="site-header"><div class="wrap"><a class="brand" href="../">Kiteday / 양혜민</a><nav aria-label="포트폴리오 이동"><a href="../research/" aria-current="page">논문·연구</a><a href="../apps/">앱 개발</a><a href="../projects/">프로젝트</a><a href="https://github.com/kiteday">GitHub ↗</a></nav></div></header>
+  <main id="main" class="wrap">
+    <section class="page-intro"><a class="breadcrumb" href="../">← 전체 포트폴리오</a><h1>논문·연구</h1><p>멀티모달 생성 모델의 입력과 구조를 설계하고, 정량 지표로 결과를 확인했습니다.</p></section>
+    <section class="topic" id="research" aria-labelledby="research-title">
+      <div class="section-heading"><div><p class="kicker">01 / Research</p><h2 id="research-title">생성 모델을 설계하고<br>결과를 검증했습니다</h2></div><p>연구 목표, 선택한 구조, 공개 결과물을 연결했습니다.</p></div>
+      <div class="research-grid">
+        <article class="archive-card"><p class="kicker">First-author paper · 2024</p><h3>Artfusion · 스타일 초상화 생성</h3><p>초상화의 인물 특성을 지키면서 화가나 사조의 스타일을 반영하는 문제를 다뤘습니다. Stable Diffusion을 기반으로 Canny edge와 ControlNet을 사용해 형태 정보를 제어했습니다. FID·ArtFID·LIQE로 결과를 비교했고, 연구를 <em>Electronics</em> 제1저자 논문으로 발표했습니다.</p><figure class="research-flow"><figcaption>핵심 입력과 생성 흐름</figcaption><div><span>초상화 사진</span><span>색·형태 특징</span><span>스타일 이미지</span><span>Diffusion + ControlNet</span><span>스타일 초상화</span></div></figure><div class="links"><a href="https://www.mdpi.com/2079-9292/13/3/509">논문 원문 ↗</a></div></article>
+        <article class="archive-card"><p class="kicker">Multimodal generation</p><h3>CCStory · 연속 장면 시각화</h3><p>장면마다 인물이 달라지는 문제를 줄이기 위해 추가 학습 없이 동일 인물의 특징을 유지하는 생성 파이프라인을 연구했습니다. 사용자 입력을 장면별 프롬프트와 레이아웃으로 구성하고, depth map·IP-Adapter·inpainting으로 인물과 배경을 결합했습니다.</p><div class="case small"><p class="label">RESEARCH QUESTION</p><h4>추가 학습 없이 인물의 일관성을 유지할 수 있는가?</h4><p>장면별 배경과 동작이 달라도 인물의 특징이 유지되도록 입력과 생성 순서를 나눠 설계하고, 품질 지표로 비교했습니다.</p></div></article>
+      </div>
+      <p class="note">Artfusion과 <a href="../projects/#exhibit">전시 프로젝트</a>는 연결된 연구 경험입니다. 학부의 12,000장 데이터셋과 논문의 학습 데이터셋을 같은 데이터로 표기하지 않았습니다.</p>
+    </section>
+    <div class="detail-bottom"><a href="../">← 전체 포트폴리오</a><a href="../apps/">앱 개발 →</a></div>
+
+  </main>
+  <footer><div class="wrap footer-line"><span>© 2026 Hyemin Yang · Engineering Portfolio</span><span><a href="https://github.com/kiteday">GitHub</a><a href="mailto:hyemin086@naver.com">Email</a><a href="/">Kiteday Apps</a></span></div></footer>
+</body>
+</html>
