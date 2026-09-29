@@ -3,11 +3,11 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Artfusion 제1저자 논문과 멀티모달 연속 장면 생성 연구.">
+  <meta name="description" content="양혜민의 생성 AI 연구: 제1저자 게재 논문 3편, CCStory 제출 원고와 교육 경험.">
   <meta name="theme-color" content="#f5f3ee">
   <meta property="og:type" content="website">
   <meta property="og:title" content="논문·연구 | 양혜민 포트폴리오">
-  <meta property="og:description" content="Artfusion 제1저자 논문과 멀티모달 연속 장면 생성 연구.">
+  <meta property="og:description" content="초상화 스타일 변환, 연속 장면 생성, 두들 스케치 기반 제어 연구.">
   <meta property="og:url" content="https://kiteday.github.io/portfolio/research/">
   <title>논문·연구 | 양혜민 포트폴리오</title>
   <link rel="stylesheet" href="../style.css">
@@ -16,17 +16,36 @@
   <a class="skip" href="#main">본문으로 바로가기</a>
   <header class="site-header"><div class="wrap"><a class="brand" href="../">Kiteday / 양혜민</a><nav aria-label="포트폴리오 이동"><a href="../research/" aria-current="page">논문·연구</a><a href="../apps/">앱 개발</a><a href="../projects/">프로젝트</a><a href="https://github.com/kiteday">GitHub ↗</a></nav></div></header>
   <main id="main" class="wrap">
-    <section class="page-intro"><a class="breadcrumb" href="../">← 전체 포트폴리오</a><h1>논문·연구</h1><p>멀티모달 생성 모델의 입력과 구조를 설계하고, 정량 지표로 결과를 확인했습니다.</p></section>
-    <section class="topic" id="research" aria-labelledby="research-title">
-      <div class="section-heading"><div><p class="kicker">01 / Research</p><h2 id="research-title">생성 모델을 설계하고<br>결과를 검증했습니다</h2></div><p>연구 목표, 선택한 구조, 공개 결과물을 연결했습니다.</p></div>
-      <div class="research-grid">
-        <article class="archive-card"><p class="kicker">First-author paper · 2024</p><h3>Artfusion · 스타일 초상화 생성</h3><p>초상화의 인물 특성을 지키면서 화가나 사조의 스타일을 반영하는 문제를 다뤘습니다. Stable Diffusion을 기반으로 Canny edge와 ControlNet을 사용해 형태 정보를 제어했습니다. FID·ArtFID·LIQE로 결과를 비교했고, 연구를 <em>Electronics</em> 제1저자 논문으로 발표했습니다.</p><figure class="research-flow"><figcaption>핵심 입력과 생성 흐름</figcaption><div><span>초상화 사진</span><span>색·형태 특징</span><span>스타일 이미지</span><span>Diffusion + ControlNet</span><span>스타일 초상화</span></div></figure><div class="links"><a href="https://www.mdpi.com/2079-9292/13/3/509">논문 원문 ↗</a></div></article>
-        <article class="archive-card"><p class="kicker">Multimodal generation</p><h3>CCStory · 연속 장면 시각화</h3><p>장면마다 인물이 달라지는 문제를 줄이기 위해 추가 학습 없이 동일 인물의 특징을 유지하는 생성 파이프라인을 연구했습니다. 사용자 입력을 장면별 프롬프트와 레이아웃으로 구성하고, depth map·IP-Adapter·inpainting으로 인물과 배경을 결합했습니다.</p><div class="case small"><p class="label">RESEARCH QUESTION</p><h4>추가 학습 없이 인물의 일관성을 유지할 수 있는가?</h4><p>장면별 배경과 동작이 달라도 인물의 특징이 유지되도록 입력과 생성 순서를 나눠 설계하고, 품질 지표로 비교했습니다.</p></div></article>
-      </div>
-      <p class="note">Artfusion과 <a href="../projects/#exhibit">전시 프로젝트</a>는 연결된 연구 경험입니다. 학부의 12,000장 데이터셋과 논문의 학습 데이터셋을 같은 데이터로 표기하지 않았습니다.</p>
-    </section>
-    <div class="detail-bottom"><a href="../">← 전체 포트폴리오</a><a href="../apps/">앱 개발 →</a></div>
+    <section class="page-intro"><a class="breadcrumb" href="../">← 전체 포트폴리오</a><h1>논문·연구</h1><p>생성 모델의 입력과 제어 방법을 설계하고, 결과를 실험으로 확인했습니다.</p></section>
+    <nav class="paper-nav" aria-label="연구별 이동"><a href="#artfusion">Artfusion</a><a href="#ccstory">CCStory</a><a href="#doodle">Doodle-Based Control</a><a href="#character">Artistic Character</a><a href="#teaching">TA·강의</a></nav>
 
+    <section class="paper-section" id="artfusion" aria-labelledby="artfusion-title">
+      <div class="paper-heading"><p class="kicker">01 / 게재 논문 · Electronics 2024</p><h2 id="artfusion-title">Artfusion</h2><p>인물의 얼굴을 유지하면서 르누아르·무하 같은 작가와 바로크·로코코 같은 미술 사조의 스타일을 적용했습니다.</p></div>
+      <ul class="paper-meta"><li>연구 2023.03–09</li><li>3인 공동 연구 · 제1저자</li><li>Stable Diffusion · ControlNet</li></ul>
+      <div class="paper-layout"><figure class="paper-figure"><a href="../assets/research/artfusion.jpg" target="_blank" rel="noopener"><img src="../assets/research/artfusion.jpg" alt="한 인물의 사진을 여러 작가와 미술 사조의 초상화 스타일로 변환한 Artfusion 결과" loading="lazy"></a><figcaption>동일 인물에 적용한 여러 스타일의 생성 결과 · <a href="https://github.com/kiteday/Artfusion">GitHub 공개 이미지</a></figcaption></figure><div class="paper-copy"><h3>문제</h3><p>작품 수가 적은 작가의 스타일도 학습하면서 원본 인물의 특징을 보존해야 했습니다.</p><h3>접근</h3><p>Stable Diffusion을 기반으로 스타일 정보를 반영하고, Canny edge와 ControlNet으로 형태 정보를 제어했습니다. 작가 스타일과 미술 사조를 모두 다룰 수 있도록 실험을 설계했습니다.</p><h3>제 역할과 결과</h3><p>제1저자로 아이디어·모델 설계·실험에 참여했습니다. FID·ArtFID·LIQE와 사용자 평가로 결과를 비교하고 <em>Electronics</em> 13권 3호에 발표했습니다.</p><a class="paper-link" href="https://www.mdpi.com/2079-9292/13/3/509">논문 원문 보기 ↗</a></div></div>
+    </section>
+
+    <section class="paper-section" id="ccstory" aria-labelledby="ccstory-title">
+      <div class="paper-heading"><p class="kicker">02 / 제출 원고 · 공개 코드</p><h2 id="ccstory-title">CCStory</h2><p>사용자가 지정한 캐릭터와 이야기를 추가 학습 없이 여러 장면으로 시각화하는 모델입니다.</p></div>
+      <ul class="paper-meta"><li>연구 2024.04–10</li><li>3인 공동 연구 · 제1저자</li><li>SDXL · GPT · IP-Adapter · DIS</li></ul>
+      <div class="paper-layout"><figure class="paper-figure"><a href="../assets/research/ccstory.png" target="_blank" rel="noopener"><img src="../assets/research/ccstory.png" alt="CCStory 발표자료의 연속 장면 생성 예시와 캐릭터 일관성 비교" loading="lazy"></a><figcaption>연속 장면 생성 예시 · 기존 연구 발표자료</figcaption></figure><div class="paper-copy"><h3>문제</h3><p>장면마다 배경과 행동이 달라져도 사용자가 지정한 인물의 특징은 유지해야 했습니다. 이를 위해 새 캐릭터마다 모델을 추가 학습하는 방식은 피하고자 했습니다.</p><h3>접근</h3><p>GPT로 이야기를 장면별 프롬프트·배경·레이아웃으로 나누었습니다. 이미지 처리 단계에서는 기본 캐릭터의 depth map을 얻고 IP-Adapter로 사용자가 지정한 캐릭터 특징을 반영한 뒤, 배경에 배치해 inpainting으로 완성했습니다.</p><h3>제 역할과 상태</h3><p>제1저자로 아이디어·모델 설계·실험에 참여했습니다. 연구 결과를 제출 원고로 정리했으며, 추론 코드를 공개했습니다.</p><a class="paper-link" href="https://github.com/CCStroy/CCStory">공개 코드 보기 ↗</a></div></div>
+    </section>
+
+    <section class="paper-section" id="doodle" aria-labelledby="doodle-title">
+      <div class="paper-heading"><p class="kicker">03 / 게재 논문 · Electronics 2024</p><h2 id="doodle-title">A Doodle-Based Control for Characters in Story Visualization</h2><p>텍스트만으로 표현하기 어려운 캐릭터의 자세와 장면 구도를 간단한 두들 스케치로 지정합니다.</p></div>
+      <ul class="paper-meta"><li>연구 2024.04–09</li><li>3인 공동 연구 · 제1저자</li><li>SDXL · LoRA · T2I-Adapter</li></ul>
+      <div class="paper-layout"><figure class="paper-figure"><a href="../assets/research/doodle-paper.png" target="_blank" rel="noopener"><img class="paper-page" src="../assets/research/doodle-paper.png" alt="두들 스케치, 모델 생성 장면, 기존 모델 결과를 비교한 논문 Figure 1" loading="lazy"></a><figcaption>두들 입력과 생성 결과 비교 · 논문 Figure 1</figcaption></figure><div class="paper-copy"><h3>문제</h3><p>프롬프트만으로는 여러 인물의 위치와 동세, 장면 전체의 구도를 원하는 대로 지정하기 어려웠습니다.</p><h3>접근</h3><p>SDXL 기반 모델에 LoRA로 주요 캐릭터를 학습하고, T2I-Adapter로 두들 스케치를 조건으로 입력했습니다. 스케치의 단순한 선과 곡선이 캐릭터 자세와 배치에 반영되도록 했습니다.</p><h3>제 역할과 결과</h3><p>제1저자로 아이디어·모델 설계·실험에 참여했습니다. 정량 평가와 생성 이미지 비교를 거쳐 <em>Electronics</em> 13권 23호에 발표했습니다.</p><a class="paper-link" href="https://www.mdpi.com/2079-9292/13/23/4628">논문 원문 보기 ↗</a></div></div>
+    </section>
+
+    <section class="paper-section" id="character" aria-labelledby="character-title">
+      <div class="paper-heading"><p class="kicker">04 / 게재 논문 · 컴퓨터게임및콘텐츠논문지 2023</p><h2 id="character-title">Artistic Character Generation Technique Using a Controllable Diffusion Model</h2><p>인물 사진의 얼굴 방향과 형태, 안경 같은 세부 특징을 반영해 예술적 캐릭터를 생성하는 연구입니다.</p></div>
+      <ul class="paper-meta"><li>2023.09 게재</li><li>3인 공동 연구 · 제1저자</li><li>Diffusion · CLIP · UNet</li></ul>
+      <div class="paper-layout"><figure class="paper-figure"><div class="paper-schematic" role="img" aria-label="인물 사진과 스타일 이미지에서 특징을 추출하고 확산 모델과 UNet을 거쳐 예술적 캐릭터를 생성하는 논문 초록 기반 흐름도"><span>인물 사진<br>스타일 이미지</span><b aria-hidden="true">↓</b><span>이미지·CLIP 인코더</span><b aria-hidden="true">↓</b><span>스타일 벡터 · UNet</span><b aria-hidden="true">↓</b><span>예술적 캐릭터</span></div><figcaption>논문 초록을 바탕으로 정리한 생성 흐름</figcaption></figure><div class="paper-copy"><h3>문제</h3><p>인물 사진에서 예술적 캐릭터를 만들 때 얼굴의 각도와 형태, 안경 같은 특징을 함께 반영해야 했습니다.</p><h3>접근</h3><p>이미지 인코더와 CLIP 인코더로 사진과 스타일 정보를 처리하고, 확산 과정·UNet·노이즈 제거를 거쳐 캐릭터를 생성하는 구조를 제안했습니다.</p><h3>제 역할과 결과</h3><p>제1저자로 참여한 연구가 <em>Journal of Computer Games and Contents</em> 36권 3호에 영문 제목으로 게재됐습니다.</p><a class="paper-link" href="https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART003000826">KCI 논문 정보 보기 ↗</a></div></div>
+    </section>
+
+    <section class="teaching-section" id="teaching" aria-labelledby="teaching-title"><div class="section-heading"><div><p class="kicker">Teaching & practice</p><h2 id="teaching-title">연구를 실습으로 옮긴 경험</h2></div></div><div class="split"><article class="case"><p class="label">2024.12–2025.01 · TA</p><h3>LangChain 기반 RAG 실습</h3><p>수업 자료를 만들고, OpenAI API·HuggingFace·LangChain으로 검색 기반 챗봇을 만드는 실습 수업을 진행했습니다.</p></article><article class="case"><p class="label">2024.05–07 · TA</p><h3>움직이는 캐릭터 영상 제작</h3><p>학생들이 스켈레톤 데이터 제작부터 영상 생성까지 경험하도록 FollowYourPose 모델을 포팅하고 Gradio 화면과 서버를 연결했습니다.</p></article></div></section>
+    <p class="note">Artfusion과 <a href="../projects/#exhibit">학부 AI 미술전</a>은 연결된 경험입니다. 전시용 12,000장 데이터셋과 Artfusion 논문의 학습 데이터셋을 같은 자료로 표기하지 않았습니다.</p>
+    <div class="detail-bottom"><a href="../">← 전체 포트폴리오</a><a href="../apps/">앱 개발 →</a></div>
   </main>
   <footer><div class="wrap footer-line"><span>© 2026 Hyemin Yang · Engineering Portfolio</span><span><a href="https://github.com/kiteday">GitHub</a><a href="mailto:hyemin086@naver.com">Email</a><a href="/">Kiteday Apps</a></span></div></footer>
 </body>
