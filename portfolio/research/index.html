@@ -14,7 +14,7 @@
 </head>
 <body>
   <a class="skip" href="#main">본문으로 바로가기</a>
-  <header class="site-header"><div class="wrap"><a class="brand" href="../">Kiteday / 양혜민</a><nav aria-label="포트폴리오 이동"><a href="../research/" aria-current="page">논문·연구</a><a href="../apps/">앱 개발</a><a href="../projects/">프로젝트</a><a href="https://github.com/kiteday">GitHub ↗</a></nav></div></header>
+  <header class="site-header"><div class="wrap"><a class="brand" href="../">Kiteday / 양혜민</a><nav aria-label="포트폴리오 이동"><a href="../research/" aria-current="page">논문·연구</a><a href="/">앱 개발 ↗</a><a href="../projects/">프로젝트</a><a href="https://github.com/kiteday">GitHub ↗</a></nav></div></header>
   <main id="main" class="wrap">
     <section class="page-intro"><a class="breadcrumb" href="../">← 전체 포트폴리오</a><h1>논문·연구</h1><p>생성 모델의 입력과 제어 방법을 설계하고, 결과를 실험으로 확인했습니다.</p></section>
     <nav class="paper-nav" aria-label="연구별 이동"><a href="#artfusion">Artfusion</a><a href="#ccstory">CCStory</a><a href="#doodle">Doodle-Based Control</a><a href="#character">Artistic Character</a><a href="#teaching">TA·강의</a></nav>
@@ -28,7 +28,7 @@
     <section class="paper-section" id="ccstory" aria-labelledby="ccstory-title">
       <div class="paper-heading"><p class="kicker">02 / 제출 원고 · 공개 코드</p><h2 id="ccstory-title">CCStory</h2><p>사용자가 지정한 캐릭터와 이야기를 추가 학습 없이 여러 장면으로 시각화하는 모델입니다.</p></div>
       <ul class="paper-meta"><li>연구 2024.04–10</li><li>3인 공동 연구 · 제1저자</li><li>SDXL · GPT · IP-Adapter · DIS</li></ul>
-      <div class="paper-layout"><figure class="paper-figure"><a href="../assets/research/ccstory.png" target="_blank" rel="noopener"><img src="../assets/research/ccstory.png" alt="CCStory 발표자료의 연속 장면 생성 예시와 캐릭터 일관성 비교" loading="lazy"></a><figcaption>연속 장면 생성 예시 · 기존 연구 발표자료</figcaption></figure><div class="paper-copy"><h3>문제</h3><p>장면마다 배경과 행동이 달라져도 사용자가 지정한 인물의 특징은 유지해야 했습니다. 이를 위해 새 캐릭터마다 모델을 추가 학습하는 방식은 피하고자 했습니다.</p><h3>접근</h3><p>GPT로 이야기를 장면별 프롬프트·배경·레이아웃으로 나누었습니다. 이미지 처리 단계에서는 기본 캐릭터의 depth map을 얻고 IP-Adapter로 사용자가 지정한 캐릭터 특징을 반영한 뒤, 배경에 배치해 inpainting으로 완성했습니다.</p><h3>제 역할과 상태</h3><p>제1저자로 아이디어·모델 설계·실험에 참여했습니다. 연구 결과를 제출 원고로 정리했으며, 추론 코드를 공개했습니다.</p><a class="paper-link" href="https://github.com/CCStroy/CCStory">공개 코드 보기 ↗</a></div></div>
+      <div class="paper-layout"><figure class="paper-figure"><a href="../assets/research/ccstory.png" target="_blank" rel="noopener"><img src="../assets/research/ccstory.png" alt="CCStory 발표자료의 연속 장면 생성 예시와 캐릭터 일관성 비교" loading="lazy"></a><figcaption>연속 장면 생성 결과</figcaption></figure><div class="paper-copy"><h3>문제</h3><p>장면마다 배경과 행동이 달라져도 사용자가 지정한 인물의 특징은 유지해야 했습니다. 이를 위해 새 캐릭터마다 모델을 추가 학습하는 방식은 피하고자 했습니다.</p><h3>접근</h3><p>GPT로 이야기를 장면별 프롬프트·배경·레이아웃으로 나누었습니다. 이미지 처리 단계에서는 기본 캐릭터의 depth map을 얻고 IP-Adapter로 사용자가 지정한 캐릭터 특징을 반영한 뒤, 배경에 배치해 inpainting으로 완성했습니다.</p><h3>제 역할과 상태</h3><p>제1저자로 아이디어·모델 설계·실험에 참여했습니다. 연구 결과를 제출 원고로 정리했으며, 추론 코드를 공개했습니다.</p><a class="paper-link" href="https://github.com/CCStroy/CCStory">공개 코드 보기 ↗</a></div></div>
     </section>
 
     <section class="paper-section" id="doodle" aria-labelledby="doodle-title">
@@ -44,8 +44,8 @@
     </section>
 
     <section class="teaching-section" id="teaching" aria-labelledby="teaching-title"><div class="section-heading"><div><p class="kicker">Teaching & practice</p><h2 id="teaching-title">연구를 실습으로 옮긴 경험</h2></div></div><div class="split"><article class="case"><p class="label">2024.12–2025.01 · TA</p><h3>LangChain 기반 RAG 실습</h3><p>수업 자료를 만들고, OpenAI API·HuggingFace·LangChain으로 검색 기반 챗봇을 만드는 실습 수업을 진행했습니다.</p></article><article class="case"><p class="label">2024.05–07 · TA</p><h3>움직이는 캐릭터 영상 제작</h3><p>학생들이 스켈레톤 데이터 제작부터 영상 생성까지 경험하도록 FollowYourPose 모델을 포팅하고 Gradio 화면과 서버를 연결했습니다.</p></article></div></section>
-    <p class="note">Artfusion과 <a href="../projects/#exhibit">학부 AI 미술전</a>은 연결된 경험입니다. 전시용 12,000장 데이터셋과 Artfusion 논문의 학습 데이터셋을 같은 자료로 표기하지 않았습니다.</p>
-    <div class="detail-bottom"><a href="../">← 전체 포트폴리오</a><a href="../apps/">앱 개발 →</a></div>
+    <p class="note">초상화 생성 연구의 출발점이 된 <a href="../projects/#exhibit">학부 AI 미술전</a>도 함께 볼 수 있습니다.</p>
+    <div class="detail-bottom"><a href="../">← 전체 포트폴리오</a><a href="../projects/">프로젝트 →</a></div>
   </main>
   <footer><div class="wrap footer-line"><span>© 2026 Hyemin Yang · Engineering Portfolio</span><span><a href="https://github.com/kiteday">GitHub</a><a href="mailto:hyemin086@naver.com">Email</a><a href="/">Kiteday Apps</a></span></div></footer>
 </body>
