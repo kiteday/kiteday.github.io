@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Reading Journal 개인정보처리방침</title>
+  <style>
+    :root{color-scheme:light dark;--bg:#f7f3ea;--card:#fff;--text:#26221d;--muted:#716b63;--line:#e5ddd0;--accent:#556c59}
+    @media(prefers-color-scheme:dark){:root{--bg:#151410;--card:#24221d;--text:#f5f1e9;--muted:#c3bcb0;--line:#454035;--accent:#a8c2a6}}
+    *{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,"Apple SD Gothic Neo",sans-serif;line-height:1.7}
+    main{width:min(760px,calc(100% - 36px));margin:auto;padding:48px 0 80px}header{padding-bottom:24px;border-bottom:2px solid var(--accent)}
+    h1{margin:0 0 8px;font-size:clamp(26px,6vw,38px)}h2{margin:32px 0 8px;font-size:20px}.meta,footer{color:var(--muted);font-size:14px}
+    .card{margin-top:24px;padding:12px 26px 30px;background:var(--card);border:1px solid var(--line);border-radius:16px}
+    .summary{padding:16px;border-left:4px solid var(--accent);background:color-mix(in srgb,var(--accent) 8%,var(--card));border-radius:8px}a{color:var(--accent)}footer{margin-top:36px;text-align:center}
+  </style>
+</head>
+<body><main>
+  <header><h1>Reading Journal 개인정보처리방침</h1><div class="meta">시행일: 2026년 10월 27일 · <a href="en/" lang="en">English</a></div></header>
+  <section class="card">
+    <p><strong>Reading Journal</strong>(독서 서가, 이하 “서비스”)은 책과 독서 기록을 계정에 보관하는 서비스입니다. 이 방침은 서비스의 iOS 앱과 웹에서 정보를 처리하는 방법을 설명합니다.</p>
+    <p class="summary"><strong>요약:</strong> Google 로그인으로 계정을 만들고, 서가·개인 메모·완독일·독서 글을 Supabase에 저장합니다. 기록은 기본적으로 본인에게만 보입니다. 앱의 광고는 Google AdMob을 사용합니다.</p>
+
+    <h2>1. 처리하는 정보와 목적</h2>
+    <ul>
+      <li>로그인: Google 로그인에서 전달되는 계정 식별자, 이메일 및 제공되는 기본 프로필 정보를 인증과 계정 관리에 사용합니다. Google 비밀번호는 받거나 보관하지 않습니다.</li>
+      <li>독서 기록: 사용자가 저장한 책 제목·저자·ISBN, 서가 메모, 완독일, 독서 글을 계정 간 동기화와 기록 조회에 사용합니다.</li>
+      <li>서비스 이용: 로그인 세션을 기기에 보관해 로그인 상태를 유지합니다. 표지·책등 이미지는 YES24 이미지 서버에서 불러오며 기기나 브라우저에 캐시될 수 있습니다.</li>
+      <li>책 검색: 검색어를 Cloudflare 중계 서버에서 YES24 도서 검색 API로 전달합니다. 중계 서버는 요청 제한을 위해 IP 주소를 사용합니다.</li>
+    </ul>
+
+    <h2>2. 보관 및 공개 범위</h2>
+    <p>계정과 독서 기록은 Supabase 인증·데이터베이스에 저장됩니다. 서가 메모와 독서 글은 현재 다른 사용자에게 공개되지 않습니다. 로그아웃해도 서버 기록은 남고, 기기의 로그인 세션은 해제됩니다. 계정과 기록 삭제를 원하면 아래 문의처로 요청해 주세요. 신원 확인 후 처리하며, 법령상 보관이 필요한 정보가 있으면 해당 기간 동안만 보관합니다.</p>
+
+    <h2>3. 외부 서비스</h2>
+    <p>Google은 로그인과 광고(AdMob), Supabase는 인증·기록 저장, Cloudflare는 도서 검색 중계, YES24는 도서 검색 결과와 이미지를 제공합니다. 각 서비스에 필요한 정보가 전달될 수 있으며, 자세한 내용은 <a href="https://policies.google.com/privacy">Google</a>, <a href="https://supabase.com/privacy">Supabase</a>, <a href="https://www.cloudflare.com/privacypolicy/">Cloudflare</a>의 방침을 참고해 주세요.</p>
+    <p>iOS 앱은 배너 광고 제공을 위해 Google Mobile Ads SDK를 사용합니다. Google은 광고 제공·측정·진단을 위해 기기 또는 기타 식별자, 앱 상호작용, IP 주소를 통한 대략적인 위치, 진단 정보 등을 처리할 수 있습니다. 항목은 기기 설정, 지역, 사용자 선택에 따라 달라집니다. 앱은 광고 개인화를 비활성화하고 Publisher First-Party ID를 사용하지 않으며 iOS 추적 허용(ATT)을 요청하지 않습니다. 필요한 지역에서는 Google의 광고 동의·개인정보 선택 화면을 제공합니다.</p>
+
+    <h2>4. 이용자 권리와 보안</h2>
+    <p>사용자는 기록의 열람·수정·삭제 및 계정 삭제를 아래 이메일로 요청할 수 있습니다. 독서 기록은 계정별 접근 권한으로 보호하며, 기기를 분실했다면 Google 계정의 보안 설정을 확인해 주세요.</p>
+
+    <h2>5. 변경 및 문의</h2>
+    <p>서비스나 정보 처리 방식이 바뀌면 이 페이지의 내용과 시행일을 갱신합니다. 개인정보 관련 문의 및 삭제 요청: <a href="mailto:hyemin086@naver.com">hyemin086@naver.com</a>.</p>
+  </section><footer>© 2026 Reading Journal</footer>
+</main></body>
+</html>
